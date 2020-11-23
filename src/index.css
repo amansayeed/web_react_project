@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  'Mulish', sans-serif;
+    background-color: #eeeeee;
+    
 }
+p{
+    font-size: 22px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;700&display=swap');
+.nav-bg-color{background-color: aqua;}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.home,.sec{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-items: center;
 }
+.button{width: 30%;}
+
+
+
+.card{width: 35rem;}
+.icard{width: 500px;
+height: 500px;}
+.object {
+    float: right;
+    width: 500px;
+    height: 500px;
+    animation: MoveUpDown 4s linear infinite;
+    position: relative; 
+    left: 0;
+    bottom: 0;
+  }
+
+
+  
+  @keyframes MoveUpDown {
+    0%, 50% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 50px;
+    }
+  }
